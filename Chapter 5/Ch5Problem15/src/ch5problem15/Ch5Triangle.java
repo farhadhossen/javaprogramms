@@ -10,9 +10,9 @@ package ch5problem15;
  */
 public class Ch5Triangle {
     
-    public static final int INVALID_DIMENSION = -1;
+   
     private boolean isValid;
-    public static double a, b, c, temp; 
+    private static double a, b, c, s, area, perimeter; 
     
     public Ch5Triangle(double a, double b, double c){
         this.a = a;
@@ -22,9 +22,38 @@ public class Ch5Triangle {
     }
     
     public void checkValid(){
-        if(a>0){
-            
+        if(a>0 && b>0 && c>0){
+            isValid = true;
+        }else{
+            isValid = false;
         }
+    }
+    
+    public double getPerimeter(){
+        
+        if(isValid){
+            perimeter = a+b+c;
+        }else{
+            perimeter = -1;
+        }
+        
+        
+        return perimeter;
+    }
+    
+    public double getArea(){
+        
+        
+        if(isValid){
+            s = (a+b+c)/2;
+            area = Math.sqrt((s*(s-a)*(s-b)*(s-c)));
+        }else{
+            area =-1;
+        }
+        
+        
+        
+        return area;
     }
         
     
