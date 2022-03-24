@@ -22,9 +22,9 @@ double carryfct=1;
          x = x * (double)(3.142 / 180.0);
          
          //variable dec
-        double cosx=1,i=2, x1=x,div;
+        double cosx=1,i=2, x1=1,div;
         
-        //get sin value using math function
+        //get cos value using math function
         double cosval = (double)cos(x);
         
         //fix a accuracy for check overflow
@@ -33,27 +33,23 @@ double carryfct=1;
         do{
             
             carryfct = carryfct * (i-1)*i;
-            //System.out.println(carryfct);
-            
+ 
             x1= -(x1*x*x);
-           // System.out.println(x1);
-            
+    
             div = x1/carryfct;
-            
-            
+    
             cosx = cosx + div;
-            //System.out.println(cosx);
             
             i=i+2;
-            
-           // System.out.println(cosx);
-            
-           
-         
+
         }while(accuracy <= cosval - cosx);
         
-        System.out.println("finally= "+cosx);
+        
+        
+        System.out.println("CosX value from serise: "+cosx);
+        System.out.println("CosX value from java math class= "+Math.cos(x));
 
+  
        
     }
 }

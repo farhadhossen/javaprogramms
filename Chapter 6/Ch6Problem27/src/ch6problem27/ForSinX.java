@@ -49,7 +49,8 @@ public class ForSinX {
 
         }while(accuracy <= sinval - sinx);
         
-        System.out.println("finally= "+sinx);
+        System.out.println("SinX value from serise: "+sinx);
+        System.out.println("SinX value from java math class= "+Math.sin(x));
 
        
     }
