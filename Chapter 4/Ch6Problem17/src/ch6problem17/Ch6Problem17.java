@@ -37,10 +37,7 @@ public class Ch6Problem17 {
             }
             
         }
-        
 
     }
-    
-
-    
+  
 }

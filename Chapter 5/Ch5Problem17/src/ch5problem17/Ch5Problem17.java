@@ -9,6 +9,7 @@ package ch5problem17;
  * @author Farhad
  */
 import java.lang.Math;
+import java.util.Scanner;
 public class Ch5Problem17 {
 
     /**
@@ -17,9 +18,14 @@ public class Ch5Problem17 {
     public static void main(String[] args) {
         // TODO code application logic here
         
+        int year;
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter a year: ");
+        year = sc.nextInt();
+        
         IntegerToRoman intToRoman = new IntegerToRoman();
         
-        intToRoman.integerToRoman(2022);
+        intToRoman.integerToRoman(year);
         
     }
     

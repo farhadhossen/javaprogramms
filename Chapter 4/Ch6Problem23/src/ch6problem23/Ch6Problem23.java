@@ -27,13 +27,8 @@ public class Ch6Problem23 {
         intLen = String.valueOf(x).length();
         
 
-        
-        for(int i=intLen; i<(5*3+intLen); i+=3){
+        for(int i=intLen; i<(50*3+intLen); i+=3){
             System.out.format("%" + (i) + "d\n", x);
         }
-
-
-
-    }
-    
+    }  
 }
