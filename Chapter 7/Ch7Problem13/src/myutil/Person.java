@@ -7,6 +7,8 @@ package myutil;
 /**
  *
  * @author FARHAD
+ * 
+ * for access this class in another class, we need to import this package there
  */
 public class Person {
     

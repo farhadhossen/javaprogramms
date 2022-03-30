@@ -5,6 +5,11 @@
 package ch7problem13;
 
 import java.util.Scanner;
+
+
+/**
+ * for accessing person class, importing myutil package here
+ */
 import myutil.Person;
 
 /**
