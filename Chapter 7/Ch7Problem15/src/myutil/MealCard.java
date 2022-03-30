@@ -49,7 +49,7 @@ public class MealCard extends Student {
     // Overriden toString method
     @Override
     public String toString() {
-        return super.toString() + "Meal Card Balance: " + this.newBalance + "\n" + "Number of Meal Cards: " + numberOfMealCards;
+        return super.toString() + "Meal Card Balance: " + this.newBalance ;
     }
 
 }
