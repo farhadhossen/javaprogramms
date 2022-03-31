@@ -11,7 +11,7 @@ package myutil;
 public class MealCard extends Student {
 
     
-    private final static int DEFAULT_BALANCE = 100;
+    public final static int DEFAULT_BALANCE = 100;
     private int itemValue;
     private int topUpValue;
     public int newBalance;
@@ -36,20 +36,20 @@ public class MealCard extends Student {
 
     // purchaseItem method for when students buy food
     public int purchaseItem() {
-        newBalance = DEFAULT_BALANCE - itemValue;
+        newBalance = newBalance - itemValue;
         return newBalance;
     }
 
     // purchasePoints method for students topping up their meal card balance
     public int purchasePoints() {
-        newBalance = DEFAULT_BALANCE + topUpValue;
+        newBalance = newBalance + topUpValue;
         return newBalance;
     }
 
     // Overriden toString method
     @Override
     public String toString() {
-        return super.toString() + "Meal Card Balance: " + this.newBalance ;
+        return super.toString() + "\nMeal Card Balance: " + this.newBalance ;
     }
 
 }
