@@ -14,18 +14,18 @@ public class Student {
     // Instance Variables
     private String name;
     private int age;
-    private String address;
+    
 
     // Default Constructor
     public Student() {
-        this("Not Given", 0, "Not Given");
+        this("Not Given", 0);
     }
 
     // Parameterized constructor that takes in values
-    public Student(String name, int age, String address) {
+    public Student(String name, int age) {
         this.name = name;
         this.age = age;
-        this.address = address;
+        
     }
 
     // Getters and Setters
@@ -45,17 +45,12 @@ public class Student {
         this.age = age;
     }
 
-    public String getAddress(){
-        return address;
-    }
     
-    public void setAddress(String address) {
-        this.address = address;
-    }
+
 
     // toString() to be overriden
     @Override
     public String toString() {
-        return "Name: " + this.name + "\n" + "Age: " + this.age + "\n" + "Address: " + this.address;
+        return "\nName: " + this.name + "\n" + "Age: " + this.age +"";
     }
 }
